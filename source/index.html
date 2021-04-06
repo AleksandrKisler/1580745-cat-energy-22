@@ -35,7 +35,7 @@
     <nav class="main-navigation">
       <ul class="main-navigation__list">
         <li class="main-navigation__item">
-          <a class="main-navigation__link active">главная</a>
+          <a class="main-navigation__link main-navigation__link--active">главная</a>
         </li>
         <li class="main-navigation__item">
           <a href="" class="main-navigation__link">каталог продукции</a>
@@ -45,7 +45,7 @@
         </li>
       </ul>
     </nav>
-    <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+    <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
   </header>
   <section class="billboard">
     <div class="billboard__description">
@@ -62,24 +62,24 @@
   </section>
   <section class="programs">
     <ul class="programs__list">
-      <li class="program__item">
-        <div class="program__item-header">
-          <div class="program__item-logo">
+      <li class="programs__item">
+        <div class="programs__item-header">
+          <div class="programs__item-logo">
             <img src="img/slim_cat.svg" alt="худой кот">
           </div>
-          <h2 class="program__item-title">
+          <h2 class="programs__item-title">
             похудение
           </h2>
         </div>
-        <div class="program__item-body">
-          <p class="program--item-text">
+        <div class="programs__item-body">
+          <p class="programs__item-text">
             Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
           </p>
         </div>
-        <div class="program__item-footer">
-          <a href="" class="program__catalog-link">
-          <span class="catalog__name">каталог slim
-            <span class="catalog__name-arrow">
+        <div class="programs__item-footer">
+          <a href="" class="programs__catalog-link">
+          <span class="programs__catalog-name">каталог slim
+            <span class="programs__catalog-arrow">
               <svg width="32" height="12" viewBox="0 0 32 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <line y1="6" x2="18" y2="6" stroke="black" stroke-width="2"/>
                 <path d="M24 6L17.25 11.1962L17.25 0.803848L24 6Z" fill="black"/>
@@ -89,9 +89,9 @@
           </a>
         </div>
       </li>
-      <li class="program__item">
-        <div class="program__item-title">
-          <div class="program__item-logo">
+      <li class="programs__item">
+        <div class="programs__item-title">
+          <div class="programs__item-logo">
             <img src="img/pro_cat.svg" alt="мощный кот">
           </div>
           <h2 class="program__title">
@@ -101,10 +101,10 @@
         <div class="program__item-body">
           Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
         </div>
-        <div class="program__item-footer">
-          <a href="" class="program__catalog-link">
-          <span class="catalog__name">каталог pro
-            <span class="catalog__name-arrow">
+        <div class="programs__item-footer">
+          <a href="" class="programs__catalog-link">
+          <span class="programs__catalog-name">каталог pro
+            <span class="programs__catalog-arrow">
               <svg width="32" height="12" viewBox="0 0 32 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <line y1="6" x2="18" y2="6" stroke="black" stroke-width="2"/>
                 <path d="M24 6L17.25 11.1962L17.25 0.803848L24 6Z" fill="black"/>
@@ -203,13 +203,12 @@
   <footer class="footer">
     <ul class="footer__list">
       <li class="footer__item">
-        <div class="company__name">
+        <div class="footer__item-company">
           <img src="img/companyname.svg" alt="имя компании">
         </div>
-
       </li>
       <li class="footer__item">
-        <ul class="social_network__list">
+        <ul class="footer__item social_network__list">
           <li class="social_network__item">
             <a href="">
               <svg width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -235,10 +234,10 @@
       </li>
       <li class="footer__item">
         <a href="https://up.htmlacademy.ru" class="footer__item-link">
-          <p class="academy__name">
+          <p class="footer__item-academy-text">
             HTML Academy
           </p>
-          <div class="academy__logotype">
+          <div class="footer__item-academy-logo">
             <img src="img/htmlacademy.svg" alt="html академя" width="16" height="16">
           </div>
         </a>
