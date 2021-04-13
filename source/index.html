@@ -93,25 +93,25 @@
     <button class="main-navigation-toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
   </header>
   <section class="billboard">
+    <div class="billboard__background"></div>
     <div class="billboard__description">
       <h1 class="billboard__headline">
-        Функциональное
+        Функциональное <br>
         питание для котов
       </h1>
       <h4 class="billboard__subtitle">
         Занялся собой? Займись котом!
       </h4>
-      <img src="img/index-can-mobile%201.png" alt="фото стакана с продукцией" class="billboard__img">
+      <a href="/" class="billboard__link">подобрать программу</a>
     </div>
-    <a href="/" class="billboard__link">подобрать программу</a>
+    <img src="img/index-can-mobile%201.png" alt="фото стакана с продукцией" class="billboard__img billboard__img--xs">
+    <img src="img/index-can.png" alt="фото стакана с продукцией" class="billboard__img billboard__img--md">
   </section>
   <section class="programs">
     <ul class="programs__list">
       <li class="programs__item">
         <div class="programs__item-header">
-          <div class="programs__item-logo">
-            <img src="img/slim_cat.svg" alt="худой кот">
-          </div>
+          <img src="img/slim_cat.svg" alt="худой кот" class="programs__item-logo--slim">
           <h2 class="programs__item-title">
             похудение
           </h2>
@@ -135,16 +135,16 @@
         </div>
       </li>
       <li class="programs__item">
-        <div class="programs__item-title">
-          <div class="programs__item-logo">
-            <img src="img/pro_cat.svg" alt="мощный кот">
-          </div>
-          <h2 class="programs__title">
+        <div class="programs__item-header">
+          <img src="img/pro_cat.svg" alt="мощный кот" class="programs__item-logo--pro">
+          <h2 class="programs__item-title">
             Набор массы
           </h2>
         </div>
         <div class="programs__item-body">
+          <p class="programs__item-text">
           Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
+          </p>
         </div>
         <div class="programs__item-footer">
           <a href="" class="programs__catalog-link">
@@ -198,27 +198,31 @@
   </section>
   <section class="example">
     <h1 class="example__title">Живой пример</h1>
-    <div class="example__description">
-      Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
-    </div>
     <div class="example__progress">
-      <ul class="example__progress__list">
-        <li class="example__progress__item">
-          <h2 class="example__progress-title">5 КГ</h2>
-          <p class="example__progress-description">снижение веса</p>
+      <ul class="example__progress-list">
+        <li class="example__progress-item">
+          <p class="example__progress-item-description">
+            Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без
+            изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+          </p>
         </li>
         <li class="example__progress-item">
-          <h2 class="example__progress-title">60 ДНЕЙ</h2>
-          <p class="example__progress-description">затрачено времени</p>
+          <div class="example__progress-item-title">
+            <span> 5 КГ</span>
+            <p class="example__progress-item-title-sub-description--kg">снижение веса</p>
+          </div>
+          <div class="example__progress-item-title">
+            <span>60 ДНЕЙ</span>
+            <p class="example__progress-item-title-sub-description--day">затрачено времени</p>
+          </div>
+
         </li>
         <li class="example__progress-item">
-          <p class="example__progress-price">Затраты на питание: 15 000 РУБ. </p>
+          <p class="example__progress-item-price"><span>Затраты на питание:</span> <span>15 000 РУБ.</span> </p>
         </li>
       </ul>
       <div class="example__progress-illustration">
-        <div class="example__progress-illustration-image">
-          <img src="img/before_cat.svg" alt="кот">
-        </div>
+        <img src="img/before_cat.svg" alt="кот" class="example__progress-illustration-image">
         <div class="example__progress-illustration-toggle">
           <p class="example__progress-illustration-toggle-was">Было</p>
           <div class="example__progress-illustration-toggle-switcher">
@@ -235,14 +239,14 @@
         к сотрудничеству дилеров!
       </div>
       <div class="address">
-        ул. Большая
+        ул. Большая <br>
         Конюшенная, д. 19/8
+        <p></p>
         Санкт-Петербург
       </div>
     </div>
     <div class="map__body">
       <img src="img/rectangle.png" alt="карта">
-      <img src="img/map_pin.png" alt="точка на карте">
     </div>
   </section>
   <footer class="footer">

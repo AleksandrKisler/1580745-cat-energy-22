@@ -1,10 +1,16 @@
 body {
   background-color: $base-color-white;
 }
-.page,
-.page__body {
-  margin: 0;
+
+.page {
   width: 100%;
+}
+
+.page__body {
+  margin: 0 auto;
+  max-width: 1440px;
+  width: 100%;
+  position: relative;
 }
 
 
