@@ -1,0 +1,41 @@
+.footer {
+  background-color: $base-color-gray-border;
+
+  .footer__list {
+    margin: 0;
+    padding: 57px 110px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+
+    &__item {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+}
+
+.footer__item-social-network-list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  .footer__item-social-network-item:not(:last-child) {
+    margin-right: 27px;
+  }
+}
+
+.footer__item-link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  .footer__item-academy-text {
+    margin: 0 22px 0 0;
+    color: #666666;
+    font-family: "Arial", sans-serif;
+  }
+}
