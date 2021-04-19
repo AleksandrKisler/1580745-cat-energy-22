@@ -1,0 +1,51 @@
+.billboard {
+  margin: -123px 0 0 0;
+  padding: 141px 0 0 190px;
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 694px;
+  background-position: 100% 0;
+  background-image: url("../img/bg-cat1.png");
+  background-size: contain, 720px;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+
+  .billboard__img {
+    width: 552px;
+    height: 499px;
+    margin-left: -47px;
+  }
+
+  .billboard__headline {
+    font-size: $font-size*3;
+    line-height: 60px;
+    margin: 0;
+  }
+
+  .billboard__subtitle {
+    font-weight: lighter;
+    text-transform: uppercase;
+    font-size: $font-size;
+    margin: $base-margin*10 +2 0 $base-margin*13 0;
+  }
+}
+
+.billboard__link {
+  font-weight: lighter;
+  background-color: $base-color-green;
+  padding: $base-padding*3 +2 $base-padding*6 +2;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 750px) {
+  .billboard__img {
+    &--xs {
+      display: none;
+    }
+  }
+  //.billboard__img--md { display: none; }
+}

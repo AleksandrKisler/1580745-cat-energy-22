@@ -1,0 +1,115 @@
+.example {
+  &__title {
+    padding: 69px 110px 76px 110px;
+    margin: 0;
+    font-size: 60px;
+    font-weight: normal;
+    font-family: "Oswald", sans-serif;
+  }
+
+  &__progress {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0 110px;
+    background-color: $base-color-gray;
+
+    .example__progress-list {
+      list-style: none;
+      padding: 70px 0 75px 0;
+      margin: 0;
+
+      .example__progress-item {
+        max-width: 436px;
+        display: flex;
+        flex-direction: row;
+
+        &-description {
+          margin: 0;
+          line-height: 24px;
+          font-family: "Arial", sans-serif;
+        }
+
+        &-title {
+          border: 1px solid $base-color-gray-border;
+          border-radius: 5px;
+          padding: 15px 57px;
+          position: relative;
+          display: flex;
+          flex-direction: column;
+
+          span {
+            font-size: 30px;
+            font-family: "Oswald", sans-serif;
+          }
+
+          &-sub-description {
+            &--kg,
+            &--day {
+              position: absolute;
+              font-family: "Arial", sans-serif;
+              font-size: 14px;
+              bottom: -8px;
+              padding: 0 10px;
+              background-color: $base-color-gray;
+              margin: 0 auto;
+              width: max-content;
+            }
+
+            &--kg {
+              left: 22px;
+            }
+
+            &--day {
+              left: 7px;
+            }
+          }
+
+          &:last-child {
+            margin-left: 42px;
+            padding: 15px 30px;
+          }
+        }
+
+        &-price {
+          font-family: "Oswald", sans-serif;
+          font-size: $font-size;
+          text-transform: uppercase;
+
+          span:not(:first-child) {
+            margin-left: 63px;
+          }
+        }
+
+        &:nth-child(n+2) {
+          margin: 69px 0 60px 0;
+        }
+
+        &:nth-child(n+3) {
+          margin: 0;
+        }
+      }
+    }
+
+    .example__progress-illustration {
+      padding-bottom: 70px;
+
+      .example__progress-illustration-toggle {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-family: "Oswald", sans-serif;
+        font-size: $font-size;
+        text-transform: uppercase;
+
+        &-switcher {
+          width: 426px;
+          height: 6px;
+          background-color: $base-color-gray-border;
+          margin: 0 11px;
+        }
+      }
+    }
+  }
+}
